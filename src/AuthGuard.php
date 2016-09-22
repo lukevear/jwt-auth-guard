@@ -33,9 +33,9 @@ class AuthGuard implements Guard
      */
     public function __construct(JWTAuth $jwt, UserProvider $provider, Request $request)
     {
-        $this->jwt = $jwt;
+        $this->jwt      = $jwt;
         $this->provider = $provider;
-        $this->request = $request;
+        $this->request  = $request;
     }
 
     /**
