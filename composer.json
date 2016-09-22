@@ -1,0 +1,22 @@
+{
+    "name": "lukevear/jwt-auth-guard",
+    "description": "A Laravel 5.3 compatible auth guard for tymondesigns/jwt-auth",
+    "type": "library",
+    "require": {
+        "php": ">=7.0",
+        "illuminate/support": ">=5.3.0",
+        "tymon/jwt-auth": "0.5.*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Luke Vear",
+            "email": "luke@cpsoft.com.au"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "LukeVear\\JWTAuthGuard\\": "src/"
+        }
+    }
+}
