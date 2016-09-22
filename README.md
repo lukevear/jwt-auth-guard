@@ -5,9 +5,9 @@
 [![Latest Unstable Version](https://poser.pugx.org/lukevear/jwt-auth-guard/v/unstable.svg)](https://packagist.org/packages/lukevear/jwt-auth-guard)
 [![License](https://poser.pugx.org/lukevear/jwt-auth-guard/license.svg)](https://packagist.org/packages/lukevear/jwt-auth-guard)
 
-This package provides an authentication guard for `tymon/jwt-auth` package when using Laravel 5.3.
+This package provides an authentication guard for the `tymon/jwt-auth` package (< 1.0.0) when using Laravel 5.3.
  
-> Please be aware that if the `tymon/jwt-auth` package does add a guard of it's own this package will be deprecated. 
+> NOTE: The `tymon/jwt-auth` package as of 1.0.* does supply it's own guard. Do not use this package unless you are using `0.5.*`.
 
 ## Installation
 
