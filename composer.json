@@ -1,5 +1,5 @@
 {
-    "name": "btfidelis/jwt-auth-guard",
+    "name": "lukevear/jwt-auth-guard",
     "description": "A Laravel 5.3 compatible auth guard for tymondesigns/jwt-auth",
     "type": "library",
     "require": {
