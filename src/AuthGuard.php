@@ -159,4 +159,32 @@ class AuthGuard implements Guard
         }
         return false;
     }
+    
+     /**
+     * Log the given User into the application.
+     *
+     * @param  mixed  $id
+     *
+     * @return bool
+     */
+    public function onceUsingId($id)
+    {
+        if ($user = $this->provider->retrieveById($id)) {
+            $this->setUser($user);
+            return true;
+        }
+        return false;
+    }
+    
+    /**
+     * Alias for onceUsingId.
+     *
+     * @param  mixed  $id
+     *
+     * @return bool
+     */
+    public function byId($id)
+    {
+        return $this->onceUsingId($id);
+    }
 }
